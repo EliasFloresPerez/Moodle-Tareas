@@ -76,7 +76,7 @@ def TareasProximas(diccionario, dias):
     # Guardamos las tareas en un diccionario
     TareasProximos7Dias = {}
     MensajeFinal = "Estás serían las actividades más próximas 👀\n\n"
-    MensajeFinal += f"\t》》*Actividades próximas* ({dias} Dias)🤓《《 \n\n"
+    MensajeFinal += f"\t》》 *Actividades próximas* 🤓《《 \n\n"
     bandera = False
     
     for Materia in diccionario:
@@ -92,7 +92,7 @@ def TareasProximas(diccionario, dias):
                 bandera = True
                 TareasProximos7Dias[Tarea] = diccionario[Materia][Tarea]
                 
-                MensajeFinal += f"  👀*`{Materia_esp}`* \n- _{Tarea}_ ➡️ _*{epoch_to_dateCom(diccionario[Materia][Tarea])}*_\n\n"
+                MensajeFinal += f"  👀 *`{Materia_esp}`* \n- _{Tarea}_ ➡️ _*{epoch_to_dateCom(diccionario[Materia][Tarea])}*_\n\n"
     
    
 
